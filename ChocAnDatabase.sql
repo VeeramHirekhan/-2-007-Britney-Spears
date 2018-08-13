@@ -7,7 +7,7 @@ CREATE TABLE [Member] (
     [City] VARCHAR(14)  NOT NULL ,
     [State] CHAR(2)  NOT NULL ,
     [ZipCode] INTEGER(5)  NOT NULL ,
-    [Email] VARCHAR(40)  NOT NULL ,
+    [Email] VARCHAR(50)  NOT NULL ,
     [Status] INTEGER  NOT NULL , -- what data type should this be?
     CONSTRAINT [PK_Member]
         PRIMARY KEY CLUSTERED ([MemberNumber] ASC)
@@ -20,7 +20,7 @@ CREATE TABLE [Provider] (
     [City] VARCHAR(14)  NOT NULL ,
     [State] CHAR(2)  NOT NULL ,
     [ZipCode] INTEGER(5)  NOT NULL ,
-    [Email] VARCHAR(40)  NOT NULL ,
+    [Email] VARCHAR(50)  NOT NULL ,
     CONSTRAINT [PK_Provider]
         PRIMARY KEY CLUSTERED ([ProviderNumber] ASC)
 )
@@ -67,7 +67,7 @@ CREATE TABLE [Employee] (
     [City] VARCHAR(14)  NOT NULL ,
     [State] CHAR(2)  NOT NULL ,
     [ZipCode] INTEGER(5)  NOT NULL ,
-    [Email] VARCHAR(40)  NOT NULL ,
+    [Email] VARCHAR(50)  NOT NULL ,
     CONSTRAINT [PK_Employee]
         PRIMARY KEY CLUSTERED ([EmployeeNumber] ASC)
 )
