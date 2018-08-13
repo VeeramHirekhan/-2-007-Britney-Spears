@@ -3,11 +3,27 @@ body {
 }
 
 h1 {
-    color: white;
     text-align: center;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
+}
+
+#button {
+    width: 6em;
+    border: 2px solid black;
+    background: #ffe;
+    border-radius: 5px;
+	position  :fixed;
+	bottom: 0;
+	right: 0;
+}	
+.options
+{
+	background-color: #0066ff;
+margin: 50px;
+    	width: 210px;
+    	padding: 35px;
 }
