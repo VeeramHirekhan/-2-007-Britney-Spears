@@ -36,6 +36,13 @@ p {
     	padding: 35px;
 	margin-left: -395px;
 }
+.selection
+{
+	background-color: #0066ff;
+	margin: 50px;
+    	width: 210px;
+    	padding: 35px;
+}
 * {
     box-sizing: border-box;
 }
