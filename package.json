@@ -1,0 +1,20 @@
+{
+  "name": "-2-007-Britney-Spears",
+  "version": "1.0.0",
+  "description": "",
+  "main": "connectdatabase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeeramHirekhan/-2-007-Britney-Spears.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeeramHirekhan/-2-007-Britney-Spears/issues"
+  },
+  "homepage": "https://github.com/VeeramHirekhan/-2-007-Britney-Spears#readme"
+}
