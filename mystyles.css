@@ -47,3 +47,11 @@ p {
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
 }
+
+label
+{
+display:inline-block;
+width:200px;
+margin-right:0px;
+text-align:right;
+}
