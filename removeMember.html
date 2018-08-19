@@ -4,7 +4,12 @@
 <link rel="stylesheet" type="javascript" href="script.js" media="screen" />
 <link rel="stylesheet" type="text/css" href="chocAnCompany.html"/>
 <head>
-
+  <script type="text/javascript">
+    function alertMessage()
+    {
+      alert("Are you sure?);
+            }
+  </script>
 </head>
 <body>
 <br>
@@ -15,7 +20,8 @@
 <input type ="text" id="myText" value="Name here" /> </p>
 <p> <label>Id Number</label>
 <input type ="text" id="myText" value="Id here" />
-<button>submit</button></p>
+<input type="button" id="btnShowMsg" value="Submit" onClick= ' alertMessage()' />
+</p>
 </div>
 </body>
 </html>
