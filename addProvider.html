@@ -2,9 +2,19 @@
 <html>
 <link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
 <link rel="stylesheet" type="javascript" href="script.js" media="screen" />
-<link rel="stylesheet" type="text/css" href="chocAnCompany.html"/>
+<link rel="stylesheet" type="text/css" href="operator.html"/>
 <head>
-
+<head>
+  <script type="text/javascript">
+    function alertMessage()
+    {
+      if (confirm("Are you sure?")) 
+{
+	location.href="operator.html";
+}
+            }
+  </script>
+</head>
 </head>
 <body>
 <br>
@@ -25,7 +35,9 @@
 </p>
 <p>
 <label>Email address</label>
-<input type ="text" id="myText" value="Email Here" /> <button>submit</button> </p>
+<input type ="text" id="myText" value="Email Here" /> 
+<input type="button" id="btnShowMsg" value="Submit" onClick= ' alertMessage()' />
+</p>
 </div>
 </body>
 </html>
