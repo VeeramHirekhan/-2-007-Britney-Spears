@@ -14,8 +14,11 @@
 		var name = document.getElementById("name").value;
 		var idNumber = document.getElementById("idNumber").value;
 		var address = document.getElementById("address").value;
-		var type = document.getElementById("type1").value;
-		var anotherType = document.getElementById("type2").value;
+		var status = 0;
+		if (document.getElementById("goodStanding").checked == true) {
+			status = 1;
+		}
+		var email = document.getElementById("myText").value;
 		addMember(memberNumber, name, address, email, status)
 	location.href="operator.html";
 	}
@@ -36,14 +39,14 @@
 <input type ="text" id="address" value="Address here" /></p>
 <p> <label>Status</label>
 <form>
-  <input class="radio" id="goodStanding" type="radio" name="type1" value="good standing" checked> Good Standing<br>
-  <input class="radio" id="suspended" type="radio" name="type2" value="suspended"> Suspended<br>
+  <input class="radio" id="goodStanding" type="radio" name="type1" value="good standing"> Good Standing<br>
+  <input class="radio" id="suspended" type="radio" name="type1" value="suspended"> Suspended<br>
 </form>
 </p>
 <p>
 <label>Email address</label>
 <input type ="text" id="myText" value="Email Here" /> 
-<input type="button" id="btnShowMsg" value="Submit" onClick= ' alertMessage()' />
+<input type="button" id="btnShowMsg" value="Submit" onClick= 'alertMessage()' />
 </p>
 </div>
 </body>
