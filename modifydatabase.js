@@ -1,6 +1,7 @@
 var Connection = require('tedious').Connection;
 var Request = require('tedious').Request;
 var TYPES = require('tedious').TYPES;
+var async = require('async');
 
 // Create connection to database
 var config = {
@@ -8,7 +9,7 @@ var config = {
   password: 'Tripleintegrals3', // update me
   server: 'localhost',
   options: {
-      database: 'chocan'
+      database: 'chocoholicsanonymous'
   }
 }
 var connection = new Connection(config);
@@ -97,10 +98,24 @@ function removeProvider(providerNumber) {
     'DELETE FROM Provider WHERE ProviderNumber=@ProviderNumber;',
     function(err, rowCount, rows) {
       if (err) console.log(err);
-      console.log(rowCount + " row(s) written.")
+      console.log(rowCount + " row(s) removed.")
     }
   );
   request.addParameter('ProviderNumber', TYPES.Numeric, providerNumber);
   
   connection.execSql(request);
 }
+
+connection.on("connect",
+  function(err) {
+    if (err) console.log(err)
+    else {
+      console.log('Connected.')
+      // addMember(989519763, "Allison Ramasami", "3704 Flower Lane, Dearborn, MI, 48128", "fakeemail@gmail.com", 1);
+      // removeMember(989519763)
+      // addProvider(989519763, "Allison Ramasami", "3704 Flower Lane, Dearborn, MI, 48128", "fakeemail@gmail.com")
+      // removeProvider(989519763);
+      addProvidedService(123456789, 756302140, 123456, '2018-03-14', 'this is a comment')
+    }
+  }
+);

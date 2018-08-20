@@ -38,7 +38,7 @@ CREATE TABLE [ProvidedService] (
     [ProviderNumber] NUMERIC(9,0)  NOT NULL ,
     [ServiceCode] NUMERIC(6,0)  NOT NULL ,
     [DateProvided] DATE  NOT NULL ,
-    [DateReceived] TIMESTAMP  NOT NULL ,
+    [DateReceived] DATETIME  NOT NULL ,
     [Comment] VARCHAR(100),
     CONSTRAINT [FK_ProvidedService_MemberNumber]
         FOREIGN KEY([MemberNumber]) REFERENCES [Member] ([MemberNumber]),

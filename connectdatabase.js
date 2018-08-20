@@ -8,7 +8,7 @@ var config = {
   password: 'Tripleintegrals3', // update me
   server: 'localhost',
   options: {
-      database: 'chocan'
+      database: 'chocoholicsanonymous'
   }
 }
 var connection = new Connection(config);
