@@ -15,9 +15,9 @@ def main():
 
     #create attachment
     part = MIMEBase('application', "octet-stream")
-    part.set_payload(open("Report.xlsx", "rb").read())
+    part.set_payload(open("ProviderReport_3.xlsx", "rb").read())
     encoders.encode_base64(part)
-    part.add_header('Content-Disposition', 'attachment; filename="Report.xlsx"')
+    part.add_header('Content-Disposition', 'attachment; filename="ProviderReport_3.xlsx"')
     msg.attach(part)
 
     #Next, log in to the server
