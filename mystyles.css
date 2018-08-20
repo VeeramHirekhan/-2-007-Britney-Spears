@@ -20,6 +20,10 @@ p {
 	bottom: 0;
 	right: 0;
 }	
+.radio
+{
+	margin-left:200px;
+}
 .options
 {
 	background-color: #0066ff;
