@@ -2,6 +2,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
 <link rel="stylesheet" type="javascript" href="script.js" media="screen" />
+<link rel="stylesheet" type="javascript" href="modifydatabase.js" media="screen" />
 <link rel="stylesheet" type="text/css" href="operator.html"/>
 <head>
 <head>
@@ -9,10 +10,16 @@
     function alertMessage()
     {
       if (confirm("Are you sure?")) 
-{
+	{
+		var name = document.getElementById("name").value;
+		var idNumber = document.getElementById("idNumber").value;
+		var address = document.getElementById("address").value;
+		var type = document.getElementById("type1").value;
+		var anotherType = document.getElementById("type2").value;
+		addMember(memberNumber, name, address, email, status)
 	location.href="operator.html";
-}
-            }
+	}
+    }
   </script>
 </head>
 </head>
@@ -22,15 +29,15 @@
 <center><p>Add Member</p></center>
 <div>
 <p><label>Name</label>
-<input type ="text" id="myText" value="Name here" /> </p>
+<input type ="text" id="name" value="Name here" /> </p>
 <p> <label>Id Number</label>
-<input type ="text" id="myText" value="Id here" /></p>
+<input type ="text" id="idNumber" value="Id here" /></p>
 <p> <label>Address</label>
-<input type ="text" id="myText" value="Address here" /></p>
+<input type ="text" id="address" value="Address here" /></p>
 <p> <label>Status</label>
 <form>
-  <input class="radio" type="radio" name="type" value="good standing" checked> Good Standing<br>
-  <input class="radio" type="radio" name="type" value="suspended"> Suspended<br>
+  <input class="radio" id="goodStanding" type="radio" name="type1" value="good standing" checked> Good Standing<br>
+  <input class="radio" id="suspended" type="radio" name="type2" value="suspended"> Suspended<br>
 </form>
 </p>
 <p>
